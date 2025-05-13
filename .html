@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Webpage</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #FFD1DC; /* Pastel Pink */
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.5;
+      max-width: 800px;
+    }
+
+    img {
+      display: block;
+      margin: 20px 0;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .highlight {
+  color: #003366; /* Navy blue text */
+  font-weight: bold;
+  background-color: #e0f7fa; /* Light pastel blue background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.highlight a {
+  color: #003366; /* Make sure the link matches the text */
+  text-decoration: none; /* Remove underline by default */
+}
+
+.highlight a u {
+  text-decoration: underline; /* Underline only the word Copilot */
+}
+
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #fff;
+      border: 2px solid #2c3e50;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f0f0f0;
+    }
+
+    a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Website</h1>
+    <p>
+      GitHub Copilot is an AI-powered code completion tool developed by GitHub and OpenAI.
+      It helps developers write code faster and more efficiently by suggesting whole lines or blocks
+      of code based on natural language prompts and existing code context. Integrated into popular editors
+      like Visual Studio Code, Copilot enhances productivity by reducing repetitive tasks and offering
+      intelligent coding suggestions.
+    </p>
+
+    <!-- Use a valid image URL here -->
+    <img src="C:\Users\SAI RAMYA\OneDrive\525\apex\I1\download.jpeg" alt="Sample Image">
+    <p class="highlight">
+  Click here to visit 
+  <a href="https://copilot.microsoft.com/chats/BjREmxPqJaCqLyGfN7k3u" target="_blank">Copilot</a></p>
+
+    <button onclick="showMessage()">Click Me</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("Hello! You clicked the button.");
+    }
+  </script>
+</body>
+</html>
